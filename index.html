@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -21,12 +21,298 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
+    
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+            
+        <!-- Slides Content begins -->
+        <div class="slides">
+            
+            <!-- Tiltle -->
+            <section>
+                <h2>Market-making Middlemen</h2>
+                <hr />
+                <p>Pieter Gautier, <strong>Bo Hu</strong>, Makoto Watanabe</p>
+                <p><small>VU University Amsterdam, Tinbergen Institute</small></p>
+            </section>
+            
+            <!-- Introduction -->
+            <section>
+                <section>
+                    <h1>Introduction</h1>
+                </section>
+                <section>
+                <h3>What is Market-making Middlemen?</h3>
+                <hr />
+                <ul>
+                <li><strong>Middlemen/Merchants</strong><p>buying/selling price, inventory holdings</p></li>
+                <li><strong>Market-makers/Platforms</strong><p>transaction/participation fees, no inventory</p></li>
+                </ul>
+                </section>
+                <section data-background="images/amazon_3.png" data-background-size="900px"></section>
+                <section data-background="images/trump_1.png"></section>
+                <section data-background="images/trump_2.png"></section>
+                <section data-background="images/trump_3.png"></section>
+                <section data-background="images/ns_1.png"></section>
+                <section data-background="images/ns_2.png"></section>
+                <section data-background="images/ns_3.png"></section>
+                <section data-background="images/spectrum.png" data-background-size="900px"></section>
+                
+                <!-- Research Question -->
+                <section data-transition="fade">
+                <h3 align="left">Question</h3>
+                <hr />
+                <p align="left">How intermediaries determine the intermediation structure?</p>
+            </section >
+            <section data-transition="fade">
+                <h3 align="left">Answer</h3>
+                <hr />
+                <ul>
+                <li><strong>Transaction amounts</strong><p>(middleman mode is less frictional)</p></li>
+                <li><strong>Competitive pressure</strong><p>(market-maker mode decreases competitive pressure)</p></li>
+                </ul>
+                </section>
+            </section>
+            
+            <!-- Model -->          
+            
+            <section>
+                <section>
+                    <h1>Model</h1>
+                </section>
+                
+                <section>
+                 <h3>Model</h3><hr />
+                <ul>
+                <li>Consider a one-period economy</li><p></p>
+                <li>Agents:
+                    <ul>
+                        <li>$B$ buyers and $S$ sellers</li>
+                        <li>One monopolistic intermediary</li>
+                        <li>all risk neutral</li>
+                    </ul><p></p>
+                 </li>
+                 <li>Homogeneous goods:
+                     <ul>
+                        <li>unit demands, assumption value 1</li>
+                        <li>unit inventory</li>
+                        <li> constant marginal production cost, normalized to 0</li>
+                    </ul>
+                </li>
+                </ul>
+                </section>
+                
+                <section data-background="images/model_2.png" data-background-size="900px">          
+                </section>
+                
+                <!-- D market -->
+                <section data-background="images/model_2.png" data-background-size="900px">
+                    
+                  <div style="background-color:rgba(255,255,255,0.95);height:80%;width:60%;float:right;">
+                   <h3 align="left">Decentralized market</h3>
+                    <ul>
+                        <li>free access</li>
+                        <li>random search $\lambda^b,\lambda^s \in (0,1)$ </li>
+                        <li>bilateral bargaining, bargaining power $\beta$ for buyers</li>
+                    </ul>
+                  </div>
+            
+                </section>
+                
+                <!-- C market -->
+                <section data-background="images/model_2.png" data-background-size="900px">
+                    
+                <div style="background-color:rgba(255,255,255,0.95);height:80%;width:70%;float:left;">
+                   <h3 align="left">Centralized market</h3>
+                    <p  align="left">Marketplace with publicly announced prices</p>
+                    <ul>
+                        <li>transaction fees $f^b,f^s \in [0,1]$</li>
+                        <li>seller price $p^s$</li>
+                        <li>middleman price $p^m$</li>
+                    </ul>
+                    </div>
+            
+                </section>
+                
+                
+                <section data-background="images/model_2.png" data-background-size="900px">
+                </section>
+                
+                <section>
+                
+                   <h3>Timing</h3><hr />
+                    <ol>
+                        <li>Two retail markets, a C market and a D market, open. The intermediary announces $\{K,f^b,f^s,p^m\}$.</li> <p> </p>
+                        <li>Buyers and sellers simultaneously decide whether to participate in the C market.</li><p> </p>
+                        <li>In C, buyer, sellers and middleman are engaged in a directed search game. In D, agents search randomly.</li>
+                  </ol>
+                   
+                </section>
+                
+             <!-- Search technologies -->
+                <section>
+                
+                   <h3>Search technologies</h3><hr />
+                    <ul>
+                        <li>Single-market search: traditional retail markets</li>
+                        <ul>
+                        <li>supermarkets, brick and mortar shops, etc.</li>
+                        <li>high search costs, high transportation costs, low durability</li>
+                        </ul>
+                        <p> </p>
+                        <li>Multi-market search: online shopping, durable goods</li>
+                        <ul>
+                        <li>advanced information/search technologies, high durability, long search period</li>
+                        </ul>
+                  </ul>
+                   
+                </section>
+            </section>
+            
+            <!-- Single Market search-->
+            <section>
+                <section>
+                    <h1>Single-Market search</h1>
+                </section>                
+                <section>              
+                   <h3>Two-sideness</h3><hr />
+                    <ul>
+                        <li>Buyer's expected value to visit a seller</li> 
+                            <p align="center">$V^s=\eta^s(1-p^s-f)>\lambda^b\beta$</p><p></p>             
+                        <li>Buyer's expected value to visit the middleman</li>
+                        <p align="center">$V^m=\eta^m(1-p^m)>\lambda^b\beta$</p>
+                    </ul>                  
+                </section>
+                
+                <section>              
+                   <h3>Frictions</h3><hr />
+                    <img src="/images/distribution.png" alt="Test Image" height="200"/>
+                    <ul>
+                        <li>buyer’s matching probability at the Middleman</li> 
+                            <p align="center">$\eta^m=\frac{\min\{K,x^m\}}{x^m}=1$</p>
+                        <p><small>in the equilibrium, $K=x^m$</small></p>
+                     
+                        <li>buyer’s matching probability at a seller</li>
+                        <p align="center">$\eta^s=\frac{1-e^{-x^s}}{x^s}<1$</p>
+                  </ul>                  
+                </section>
+                
+                <section>              
+                   <h3>Definition</h3><hr />
+                    <ul>
+                        <li>Pure Middleman: $x^m=B$</li> <p></p>
+                        <li>Pure Marketmaker: $x^m=0$</li><p></p>
+                        <li>Market-making middleman: $x^m \in (0,B)$</li>
+                  </ul>                  
+                </section>
+                
+                <section>              
+                   <h3>Optimal intermediary</h3><hr />
+                    
+                    <p align="left"><strong>Proposition 1 (Pure middleman)</strong></p>
+                    <p align="left">Given single-market search technologies, the intermediary will not open the platform and will act as a pure middleman with $x^m = K = B$, serving all buyers for sure.</p><p></p>
+                    
+                    <p align="left"><strong>Remark:</strong></p>
+                    <p>$\Pi=S(1-e^{-x^s})f+\min\{K,x^m\}p^m$</p>
+                </section>
+            </section>
+            
+                
+            <!-- Multiple Market search -->
+            <section>
+                <section>
+                    <h1>Muli-Market search</h1>
+                </section>
+                <section>              
+                   <h3>Competitive pressure</h3><hr />
+                    <p align="left"><strong>Timing issue:</strong> first mover advantage</p><p></p>
+                
+                    <p align="left"><strong>Incentive constraint (buyers)</strong></p>
+                    <p>$1-p^m > \lambda^b P^s(x^m) \beta$</p>
+                    <p>$1-p^s -f> \lambda^b P^s(x^m) \beta$</p><p></p>
+                    
+                    <p align="left"><strong>Incentive constraint (sellers)</strong></p>
+                    <p>$p^s > \lambda^s P^b(x^m) (1-\beta)$</p>
+                </section>
+                <section>              
+                   <h3>Trade off</h3><hr />
+                    <p align="left"><strong>Intermediary structure influences competitive pressure</strong>
+                    <p>$P^s(x^m)$ is increasing in $x^m$</p>
+                
+                    <p align="left"><strong>More transactions</strong></p>
+                    <p align="left">Middleman is efficient in matching demand and supply</p><p></p>
+                    
+                    <p align="left"><strong>Less profit per transaction</strong></p>
+                    <p align="left">Middleman creates more competitive pressure</p>
+                </section>
+                <section>              
+                   <h3>Optimal intermediary</h3><hr />
+                    <p align="left"><strong> Proposition 2 (Active Market-maker)</strong></p>
+                    <p align="left">Given multi-market search technologies, the intermediary will open a platform and act as:
+                    <p align="left">(1) a market-making middleman if </p><p>$\lambda^b \beta \leq 1/2$ or if $\lambda^b \beta > 1/2$ and $B/S \geq c$</p>
+                    <p align="left">(2) a pure marketmaker if </p><p>$\lambda^b \beta > 1/2$ and $B/S < c$</p>
+                    
+                </section>
+            </section>
+            
+            
+                
+            <!-- Extensions -->
+            <section>
+                 <section>
+                    <h1>Extensions</h1>
+                </section>
+                <section>
+                    <h3>Extensions</h3><hr />
+                    <ul><li>general matching function in D market</li><p></p><li>endowment economy</li><p></p><li>competing intermediaries</li></ul>
+
+                </section>
+                <section>              
+                   <h3>Endowment economy</h3><hr />     
+                    <p align="left"><strong>Assumption</strong></p>
+                    <p align="left">In the wholesale market, the middleman can access a fraction $\alpha$ of sellers: </p> <p>$K \leq \alpha S$.</p>
+                    <p align="left"><strong>Proposition 3</strong></p>
+                    <p align="left">The intermediation chooses to be a market-making middleman or a pure market-maker with</p><p> $x^m \leq K = \alpha S$.</p>
+                    
+                </section>
+            </section>
+            
+            <!-- Applications -->
+            <section>
+                <section>
+                    <h1>Applications</h1>
+                </section>
+                <section>              
+                   <h3>Amazon</h3><hr />   
+                    <ul>
+                    <li>Amazon faces strong competition from local brick and mortar rivals and especially from eBay.</li><p></p>
+                    <li>Amazon drove physical book and record stores out of business, and many relaunched on Amazon platform.</li></ul>
+                </section>
+                <section>              
+                   <h3>Trump</h3><hr />   
+                    <ul>
+                    <li>Endownmen economy.</li><p></p>
+                    <li>Brokers in NYC aime at relaxing their resource constraint and increasing their inventory by development.</li></ul>
+                </section>
+            </section>
+                
+            <!-- Conclusion -->
+            <section>
+                <section>
+                    <h1>Conclusion</h1>
+                </section>
+                <section>              
+                   <h3>Conclusion</h3><hr />   
+                    <ul>
+                    <li>A simple framework to study the determination of intermediated market structure. </li><p></p>
+                    <li>Search technology/competitive environment is a critical factor for the emergence of hybrid intermediation.</li></ul>
+                </section>
+            </section>
+            
+            
+         </div>
+        <!-- Slides Content ends -->    
+            
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -42,7 +328,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+               // MathJax
+                    { src: 'plugin/math/math.js', async: true }
 				]
 			});
 		</script>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notes for html</title>
+<meta name="keywords" content="HTML, Meta Tags, Metadata" />
+<meta name="description" content="Learning about Meta Tags." />
+<meta name="author" content="Mahnaz Mohtashim" />
+</head>
+<body>
+ 
+<!--   This is valid comment -->
+<!--   
+This is a multiline comment and it can
+span through as many as lines you like.
+-->
+    
+<h1>1. Basic tags</h1>
+    
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+    
+<p>Here is a first paragraph of text.</p>
+<p>Here is a second paragraph of text.</p>
+<p>Here is a third paragraph of text.</p>
+    
+<p>Hello<br />
+You delivered your assignment ontime.<br />
+Thanks<br />
+Mahnaz</p>
+    
+<p>This text is not in the center.</p>
+<center>
+<p>This text is in the center.</p>
+</center>
+
+<p>This is <i>italic</i> paragraph</p>
+<p>This is <u>underlined</u> paragraph</p>
+<p>The following word uses a <b>bold</b> typeface.</p>
+<p>The following word uses a <strike>strikethrough</strike> typeface.</p>
+<p>The following word uses a <tt>monospaced</tt> typeface.</p>
+<p>The following word uses a <sup>superscript</sup> typeface.</p>
+<p>The following word uses a <sub>subscript</sub> typeface.</p>
+<p>I want to drink <del>cola</del> <ins>wine</ins></p>
+<p>The following word uses a <em>emphasized</em> typeface.</p>
+<p>The following word has been <mark>marked</mark> with yellow</p>
+<p>The following word uses a <strong>strong</strong> typeface.</p>
+<p>The following word uses a <big>big</big> typeface.</p>
+<p>The following word uses a <small>small</small> typeface.</p>
+<blockquote>Bo said</blockquote>
+    <p>Amit is in Spain, <q>I think I am wrong</q>.</p>
+<p>This is paragraph one and should be on top</p>
+<p>Regular text. <code>This is code.</code> Regular text.</p>
+<p>This HTML tutorial is derived from <cite>W3 Standard for HTML</cite>.</p>
+
+    
+<hr />
+<p>This is paragraph two and should be at bottom</p>
+    
+<pre>
+function testFunction( strText ){
+   alert (strText)
+}
+</pre>
+    
+<p>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."</p>
+
+<p>The "div" and "span" elements allow you to group together several elements to create sections or subsections of a page. "span" is only for inline elements</p>
+    
+    <div id="menu" align="middle" >
+    <a href="/index.htm">HOME</a> | 
+    <a href="/about/contact_us.htm">CONTACT</a> | 
+    <a href="/about/index.htm">ABOUT</a>
+    </div>
+
+    <div id="content" align="left" bgcolor="white">
+    <h5>Content Articles</h5>
+    <p>Actual content goes here.....</p>
+        
+    <p>This is the example of <span style="color:green">span tag</span> and the <span style="color:red">div tag</span> alongwith CSS</p>
+
+<img src="/figures/amazon_1.png" alt="Test Image" width="150" height="100" />
+<img src="/figures/amazon_1.png" alt="Test Image" width="150" height="100" border="3" align="right"/>
+
+<ul>
+<li>Beetroot</li>
+<li>Ginger</li>
+<li>Potato</li>
+<li>Radish</li>
+</ul>
+        
+<ol>
+<li>Beetroot</li>
+<li>Ginger</li>
+<li>Potato</li>
+<li>Radish</li>
+</ol>
+ 
+<dl>
+<dt><b>HTML</b></dt>
+<dd>This stands for Hyper Text Markup Language</dd>
+<dt><b>HTTP</b></dt>
+<dd>This stands for Hyper Text Transfer Protocol</dd>
+</dl>
+        
+<p>Click any of the following links</p>
+<a href="notes.html" target="_blank">Opens in New</a> |
+<a href="notes.html" target="_self">Opens in Self</a> |
+<a href="notes.html" target="_parent">Opens in Parent</a> |
+<a href="notes.html" target="_top">Opens in Body</a>
+<p>one can use base href="http://www.tutorialspoint.com/" to define base path</p>   
+      
+<p>Research within the page: First create a link to the place where you want to reach with-in a webpage and name it using such as</p>    
+
+<h1>HTML Text Links <a name="top"></a></h1>
+<p>Second step is to create a hyperlink to link the document and place where you want to reach:
+<a href="#top">Go to the Top</a></p>
+        
+<h1>2. HTML Attributes</h1>
+
+<p align="left">An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts: a name and a value.</p>
+<p align="left">This is left aligned</p>
+<p align="center">This is center aligned</p>
+<p align="right">This is right aligned</p>    
+    
+<p>Core Attributes
+The four core attributes that can be used on the majority of HTML elements (although not all) are: id, title, class, style.</p>
+    <p id="html">This para explains what is HTML</p>
+    <p id="css">This para explains what is Cascading Style Sheet</p>
+    <h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+    <p>The class attribute is used to associate an element with a style sheet, and specifies the class of element. The value of the attribute may also be a space-separated list of class names. The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.</p>
+    <p style="font-family:arial; color:#FF0000;">Some text...</p>
+        
+<h1>3. Layout</h1>
+  
+<p>Layout 1</p>
+<table width="100%" border="0">
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <h1>This is Web Page Main title</h1>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#aaa" width="50">
+      <b>Main Menu</b><br />
+      HTML<br />
+      PHP<br />
+      PERL...
+    </td>
+    <td bgcolor="#eee" width="100" height="200">
+        Technical and Managerial Tutorials
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <center>
+      Copyright © 2007 Tutorialspoint.com
+      </center>
+    </td>
+  </tr>
+</table>
+        
+<p>Layout 2</p>
+     <table width="100%" border="0">
+      <tr valign="top">
+        <td bgcolor="#aaa" width="20%">
+          <b>Main Menu</b><br />
+          HTML<br />
+          PHP<br />
+          PERL...
+        </td>
+        <td bgcolor="#b5dcb3" height="200" width="60%">
+            Technical and Managerial Tutorials
+        </td>
+        <td bgcolor="#aaa" width="20%">
+          <b>Right Menu</b><br />
+          HTML<br />
+          PHP<br />
+          PERL...
+        </td>
+       </tr>
+    <table>
+        
+<p>Layout 3</p>
+    <div style="width:100%">
+      <div style="background-color:#b5dcb3; width:100%">
+          <h1>This is Web Page Main title</h1>
+      </div>
+      <div style="background-color:#aaa; height:200px;width:100px;float:left;">
+          <div><b>Main Menu</b></div>
+          HTML<br />
+          PHP<br />
+          PERL...
+      </div>
+      <div style="background-color:#eee; height:200px;width:350px;float:left;">
+        <p>Technical and Managerial Tutorials</p>
+      </div>
+      <div style="background-color:#aaa; height:200px;width:100px;float:right;">
+          <div><b>Right Menu</b></div>
+          HTML<br />
+          PHP<br />
+          PERL...
+      </div>
+      <div style="background-color:#b5dcb3;clear:both">
+      <center>
+          Copyright © 2007 Tutorialspoint.com
+      </center>
+      </div>
+    </div>
+</body>
+</html>
